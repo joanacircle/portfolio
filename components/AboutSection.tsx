@@ -26,8 +26,8 @@ const AboutSection = () => {
         </h1>
 
         <div className="flex flex-col space-y-10 items-stretch justify-center align-top md:flex-row md:text-left md:p-4 md:space-y-0 md:space-x-10">
-          <div className="text-center md:w-1/2 md:text-left">
-            <h1 className="text-2xl font-bold mb-6">My Skills</h1>
+          <div className="md:w-1/2">
+            <h1 className="text-center text-2xl font-bold mb-6 md:text-left">My Skills</h1>
             <div className="flex flex-wrap flex-row justify-center z-10 md:justify-start">
                 {skills.map((v,i) => 
                 <p key={i} className="bg-gray-200 px-4 py-2 mr-2 mt-2 text-gray-500 rounded font-semibold">

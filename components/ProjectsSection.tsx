@@ -25,7 +25,7 @@ const projects = [
 const ProjectsSection = () => {
   return (
     <section id="projects">
-      <h1 className="text-center font-bold text-4xl">
+      <h1 className="my-10 text-center font-bold text-4xl">
         Projects
         <hr className="w-6 h-1 mx-auto my-4 bg-teal-500 border-0 rounded"></hr>
       </h1>
@@ -35,7 +35,7 @@ const ProjectsSection = () => {
         <div key={v.name}>
           <SlideUp offset="-300px 0px -300px 0px">
             <div className="flex flex-col animate-slideUpCubiBzier animation-delay-2 md:flex-row md:space-x-12">
-              <div className="mt-8 md:w-1/2">
+              <div className="md:w-1/2">
                 <Link href={v.github} target="_blank">
                   <Image
                     src={v.image}
@@ -46,17 +46,16 @@ const ProjectsSection = () => {
                   />
                 </Link>
               </div>
-              <div className="mt-12 md:w-1/2">
+              <div className="mt-8 md:w-1/2">
                 <h1 className="text-4xl font-bold mb-6">{v.name}</h1>
                 <p className="text-xl leading-7 mb-4 text-neutral-600 dark:text-neutral-400">{v.description}</p>
-                <div>
+                <div className="flex flex-row align-bottom space-x-4">
                   <Link href={v.github} target="_blank">
                     <BsGithub
                       size={30}
                       className="inline-block hover:-translate-y-1 transition-transform cursor-pointer"
                     />
                   </Link>
-                  <Link href={v.link}></Link>
                 </div>
               </div>
             </div>
